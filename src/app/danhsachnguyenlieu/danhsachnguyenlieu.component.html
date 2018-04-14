@@ -1,0 +1,117 @@
+<div class="breadcrumb-holder">
+  <div class="container-fluid">
+    <ul class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#exampledropdownDropdown1" aria-expanded="false" data-toggle="collapse">Nguyên Liệu</a></li>
+      <li class="breadcrumb-item active">Danh Sách Nguyên Liệu</li>
+    </ul>
+  </div>
+</div>
+<section>
+  <div class="container-fluid">
+    <!-- Page Header-->
+    <header> 
+      <h1 class="h3 display">Danh Sách Nguyên Liệu</h1>
+    </header>
+    <div class="row">
+      <div class="col-lg-12">
+        <button style="float:right" class="btn btn-dark" data-toggle="modal" data-target="#NguyenLieu">Add</button>
+
+        <!-- Add Salary -->
+        <div class="modal fade bd-example-modal-lg" id="NguyenLieu" tabindex="-1" role="dialog" aria-labelledby="NguyenLieuTitle" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="NguyenLieuTitle">Nguyên Liệu</h5>                              
+              </div>
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <form>
+                    <div class="form-group row">
+                      <label class="col-md-3 col-sm-12">Mã Nguyên Liệu</label>
+                      <div class="col-md-9 col-sm-12">    
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-md-3 col-sm-12">Tên Nguyên Liệu</label>
+                      <div class="col-md-9 col-sm-12">
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-md-3 col-sm-12">Số Lượng Tồn</label>
+                        <div class="col-md-9 col-sm-12">
+                          <input type="number" step="0.1" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-md-3 col-sm-12">Giới Hạn Tồn</label>
+                      <div class="col-md-9 col-sm-12">
+                        <input type="number" step="0.1" class="form-control">
+                      </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label class="col-md-3 col-sm-12">Đơn Vị Tính</label>
+                    <div class="col-md-9 col-sm-12">
+                      <input type="text" class="form-control">
+                    </div>
+                </div>
+                  </form>
+                </div>
+              </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Lưu</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+          </div>
+        </div> 
+
+        <!-- table Bang Luong -->
+        <div class="card">
+          <div class="card-header">
+            <h4>Bảng Nguyên Liệu</h4>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table id="salary" class="display  table table-bordered table-hover table-striped text-center" style="width:100%"  >
+                <thead>
+                  <tr>
+                    <th>STT</th>
+                    <th>Mã Nguyên Liệu</th>
+                    <th>Tên Nguyên Liệu</th>
+                    <th>Số Lượng Tồn</th>
+                    <th>Giới Hạn Tồn</th>
+                    <th>ĐVT</th>                            
+                    <th>Thao Tác</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>NL_001</td>
+                    <td>Cà Rốt</td>
+                    <td>20</td>
+                    <td>2</td>
+                    <td>Kilogram</td>
+                    <td><button  class="btn btn-primary fa fa-pencil text-light " data-toggle="modal" data-target="#NguyenLieu" ></button>
+                      <button  class="btn btn-danger fa fa-trash text-light"  ></button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Edit Salary -->
+        
+      </div>
+      
+    </div>
+  </div>
+</section>

@@ -1,0 +1,141 @@
+<div class="breadcrumb-holder">
+  <div class="container-fluid">
+    <ul class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#exampledropdownDropdown1" aria-expanded="false" data-toggle="collapse">Hóa Đơn</a></li>
+      <li class="breadcrumb-item active">Hóa Đơn Bán</li>
+    </ul>
+  </div>
+</div>
+<section>
+  <div class="container-fluid">
+    <!-- Page Header-->
+    <header> 
+      <h1 class="h3 display">Danh Sách Hóa Đơn Bán</h1>
+    </header>
+    <div class="row">
+      <div class="col-lg-12">
+            <div class="row">
+                <div class="col-lg-12"><button style="float:right" class="btn btn-dark" data-toggle="modal" data-target="#HoaDonBan">Add</button></div>
+            </div>
+
+        <!-- Add Salary -->
+        <div class="modal fade bd-example-modal-lg" id="HoaDonBan" tabindex="-1" role="dialog" aria-labelledby="HoaDonBanTitle" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="HoaDonBanTitle">Hóa Đơn Bán</h5>                              
+              </div>
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <form>
+                    <div class="form-group row">
+                      <label class="col-md-3 col-sm-12">Mã Hóa Đơn</label>
+                      <div class="col-md-9 col-sm-12">    
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-md-3 col-sm-12">Tên Nhân Viên</label>
+                      <div class="col-md-9 col-sm-12">
+                        <select class="js-example-basic-single form-control " name="state">
+                            <option></option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-md-3 col-sm-12">Nhân Viên Bồi Bàn</label>
+                        <div class="col-md-9 col-sm-12">
+                          <select class="js-example-basic-single form-control " name="state">
+                              <option></option>
+                          </select>
+                        </div>
+                      </div>
+
+                    <div class="form-group row">
+                        <label class="col-md-3 col-sm-12">Ngày Lập</label>
+                        <div class="col-md-9 col-sm-12">
+                            <input type="date" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-3 col-sm-12">Bàn</label>
+                        <div class="col-md-9 col-sm-12">
+                            <input type="number" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                            <label class="col-md-3 col-sm-12">Trạng Thái</label>
+                            <div class="col-md-9 col-sm-12">
+                                <select class="form-control">
+                                    <option></option>
+                                </select>
+                            </div>
+                        </div>
+                    <div class="form-group row">
+                            <label class="col-md-3 col-sm-12">Tổng Tiền</label>
+                            <div class="col-md-9 col-sm-12">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                  </form>
+                </div>
+              </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Lưu</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+          </div>
+        </div> 
+
+        <!-- table Bang Luong -->
+        <div class="card">
+          <div class="card-header">
+            <h4>Bảng Hóa Đơn Bán</h4>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table id="salary" class="display  table table-bordered table-hover table-striped text-center" style="width:100%"  >
+                <thead>
+                  <tr>
+                    <th>STT</th>
+                    <th>Mã Hóa Đơn</th>
+                    <th>Tên Nhân Viên</th>
+                    <th>Tên Nhân Viên Bồi Bàn</th>
+                    <th>Bàn</th>
+                    <th>Trạng Thái</th>
+                    <th>Ngày Lập</th>
+                    <th>Tổng Tiền</th>
+                    <th>Thao Tác</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>HDB_001</td>
+                    <td>Quang Tran</td>
+                    <td>Thanh</td>
+                    <td>1</td>
+                    <td>Đã Thanh Toán</td>
+                    <td>4/5/2018</td>
+                    <td>100000</td>
+                    <td><button  class="btn btn-primary fa fa-pencil text-light " data-toggle="modal" data-target="#HoaDonBan" ></button>
+                      <button  class="btn btn-danger fa fa-trash text-light"  ></button>
+                      <a routerLink = "/hoadonban/chitiethoadonban" class="btn btn-info fa fa-align-justify text-light" ></a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Edit Salary -->
+        
+      </div>
+      
+    </div>
+  </div>
+</section>

@@ -1,0 +1,147 @@
+<div class="breadcrumb-holder">
+  <div class="container-fluid">
+    <ul class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#exampledropdownDropdown1" aria-expanded="false" data-toggle="collapse">Hóa Đơn</a></li>
+      <li class="breadcrumb-item"><a href="HoaDonBan.html">Hóa Đơn bán</a></li>
+      <li class="breadcrumb-item active">Chi Tiết Hóa Đơn Bán</li>
+    </ul>
+  </div>
+</div>
+<section>
+  <div class="container-fluid">
+    <!-- Page Header-->
+    <header> 
+      <h1 class="h3 display"></h1>
+    </header>
+    <div class="row">
+        <div class="offset-sm-2 offset-md-3 offset-lg-4  col-sm-8 col-md-6 col-lg-4">
+            <div class="card">
+                <div class="card-header">
+                    <label>Hóa Đơn Bán</label>
+                </div>
+                <div class="card-body">
+                    <div class="form-group row">
+                        <label class="col-lg-4 col-form-label">Mã Hóa Đơn</label>
+                        <div class="col-lg-8">
+                            <input type="text" class="form-control" disabled>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-lg-4 col-form-label">Ngày Lập</label>
+                        <div class="col-lg-8">
+                            <input type="date" class="form-control" disabled>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-lg-4 col-form-label">Nhân Viên</label>
+                        <div class="col-lg-8">
+                            <input type="text" class="form-control" disabled>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                            <label class="col-lg-4 col-form-label">Trạng Thái</label>
+                            <div class="col-lg-8">
+                                <input type="text" class="form-control " disabled>
+                            </div>
+                        </div>
+                    <div class="form-group row">
+                        <label class="col-lg-4 col-form-label">Tổng Tiền</label>
+                        <div class="col-lg-8">
+                            <input type="text" class="form-control " disabled>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">              
+        <div class="row">
+            <div class="col-lg-12"><button style="float:right" class="btn btn-dark" data-toggle="modal" data-target="#ChiTietHoaDonBan">Add</button></div>
+        </div>
+        <!-- Add Salary -->
+        <div class="modal fade bd-example-modal-lg" id="ChiTietHoaDonBan" tabindex="-1" role="dialog" aria-labelledby="ChiTietHoaDonBanTitle" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="ChiTietHoaDonBanTitle">Chi Tiết Bán</h5>                              
+              </div>
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <form>
+                    <div class="form-group row">
+                      <label class="col-md-3 col-sm-12">Tên Món Ăn</label>
+                      <div class="col-md-9 col-sm-12">
+                        <select name="" id="" class="form-control">
+                            <option></option>
+                        </select>
+                      </div>
+                    </div>
+                    
+                    <div class="form-group row">
+                      <label class="col-md-3 col-sm-12">Số Lượng</label>
+                      <div class="col-md-9 col-sm-12">
+                        <input type="number" class="form-control" step="0.1">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                            <label class="col-md-3 col-sm-12">Đơn Giá</label>
+                            <div class="col-md-9 col-sm-12">
+                              <input type="text" class="form-control" >
+                            </div>
+                    </div>
+                    
+                  </form>
+                </div>
+              </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Lưu</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+          </div>
+        </div> 
+
+        <!-- table Bang Luong -->
+        <div class="card">
+          <div class="card-header">
+            <h4>Bảng Chi Tiết Hóa Đơn Bán</h4>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table id="salary" class="display  table table-bordered table-hover table-striped text-center" style="width:100%"  >
+                <thead>
+                  <tr>
+                    <th>STT</th>
+                    <th>Mã Món Ăn</th>
+                    <th>Tên Món Ăn</th>
+                    <th>Số Lượng </th>
+                    <th>Đơn Giá</th>                                                 
+                    <th>Thao Tác</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>M_001</td>
+                    <td>Thịt Bò xào rau Muống</td>
+                    <td>2</td>
+                    <td>100000</td>
+                    <td><button  class="btn btn-primary fa fa-pencil text-light " data-toggle="modal" data-target="#ChiTietHoaDonBan" ></button>
+                      <button  class="btn btn-danger fa fa-trash text-light"  ></button>                              
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Edit Salary -->
+        
+      </div>
+      
+    </div>
+  </div>
+</section>
